@@ -1,0 +1,92 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Poppins|Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+.centro {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background: #eee;
+    font-family: 'Ubuntu', sans-serif
+}
+
+.box {
+    position: relative;
+    width: 1000px;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex
+}
+
+.a:hover {
+    background-color: black;
+  }
+
+.our-services {
+    margin-top: 100px;
+    padding-bottom: 0px;
+    padding: 50px 50px;
+    min-height: 200px;
+    min-width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+  }
+
+.our-services .icon {
+    margin-bottom: -21px;
+    transform: translateY(-50%);
+    text-align: center
+}
+
+.our-services:hover h4,
+.our-services:hover p {
+    color:#eee;
+}
+
+.speedup:hover {
+    box-shadow: 25px 25px 25px 0 rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.settings:hover {
+    box-shadow: 0 0 25px 0 rgba(73, 78, 240, 0.05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #34b5bf 0%, #210c59 100%)
+}
+
+.privacy:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #3615e7 0%, #44a2f6 100%)
+}
+
+.backups:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #fc6a0e 0%, #fdb642 100%)
+}
+
+.ssl:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #8d40fb 0%, #5a57fb 100%)
+}
+
+.database:hover {
+    box-shadow: 0 0 25px 0 rgba(20, 27, 201, .05);
+    cursor: pointer;
+    background-image: linear-gradient(-45deg, #27b88d 0%, #22dd73 100%)
+}

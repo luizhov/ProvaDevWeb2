@@ -1,0 +1,58 @@
+###
+POST http://localhost:1234/Create
+content-type: application/json
+
+{
+    "livro":
+    [
+        {
+            "Titulo":"Jogos vorazes",
+            "Autor": "Minha tia",
+            "AnoLancamento":"2020",
+            "Editora":"Curitiba",
+            "Genero": "Ação",
+        }
+    ],
+    "cliente":
+    [
+        {
+            "Nome":"Jonas Brothers",
+            "Cpf":"5568"
+        }
+    ]
+}
+
+###
+GET http://localhost:1234/cliente/listar/728
+
+###
+GET http://localhost:1234/livro/listar/5f7f3847a00d1f0b38afa5cd
+
+###
+POST http://localhost:1234/livro/emprestar
+content-type: application/json
+
+{
+    "DataEmprestimo":
+        "2020-10-04",
+        "DataDevolução":"2020-10-11",
+    "livro":
+    [
+        {
+            "Título":"Jogos vorazes",
+            "Autor": "Minha tia",
+            "AnoLancamento":"2020",
+            "Editora":"Curitiba",
+            "Genero": "Ação"
+        }
+    ],
+    "cliente":
+    [
+        {
+            "Nome":"Jonas Brothers",
+            "Cpf":"5568"
+        }
+    ]
+
+
+}
